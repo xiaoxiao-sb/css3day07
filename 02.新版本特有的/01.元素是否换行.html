@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            /*flex容器*/
+            display: flex;
+            /*display: -webkit-flex;*/
+            height: 200px;
+            border-bottom: 5px solid green;
+            /*项目实现换行*/
+            /*在弹性盒布局中 如果不设置换行  伸缩项目就算宽度溢出 也不会换行 还是在父元素的范围中*/
+            /*默认值  不换行*/
+            flex-wrap: nowrap;
+            /*换行*/
+            flex-wrap: wrap;
+            /*align-items: flex-start;
+                align-items   是控制行侧轴的属性
+                align-content  是控制总侧轴的
+            */
+
+            align-items: flex-end;
+            /*align-items: center;*/
+        }
+        .box{
+            width: 50%;
+        }
+        .box1{
+            background: deeppink;
+        }
+        .box2{
+            background: yellowgreen;
+        }
+        .box3{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            /*flex容器*/
+            display: flex;
+            /*display: -webkit-flex;*/
+
+            height: 200px;
+            border-bottom: 5px solid green;
+            /*默认值*/
+            /*flex-direction: row;*/
+            /*主轴start和end发生对调*/
+            /*flex-direction: row-reverse;*/
+            /* 主轴侧轴发生对调*/
+            /*flex-direction: column;*/
+            /*主轴侧轴发生对调，主轴的start和end发生对调*/
+            flex-direction: column-reverse;
+            /*换不换行*/
+            /*flex-wrap: nowrap;*/
+            flex-wrap: wrap;
+            /* 换行  并且侧轴start和end发生对调*/
+            /*flex-wrap: wrap-reverse;*/
+            /*flex-flow: wrap row-reverse;*/
+        }
+        /*
+            元素设置换行到底需要宽度好使高度？？？
+            如果column属性值，主轴与侧轴发生对调，设置高度
+            如果主轴在水平方向上，元素设置宽度来实现换行
+            如果主轴在垂直方向上，元素设置高度来实现换行
+        */
+        .box{
+            width: 50%;
+            height: 50%;
+            /*height: 100%;*/
+            /*height: 33.33333%;*/
+        }
+        .box1{
+            background: deeppink;
+        }
+        .box2{
+            background: yellowgreen;
+        }
+        .box3{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

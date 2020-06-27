@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            /*flex容器*/
+            display: flex;
+            display: -webkit-flex;
+
+            height: 200px;
+            border-bottom: 5px solid green;
+
+            justify-content: flex-start;/*默认值*/
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;/*富裕空间包含伸缩项目*/
+            justify-content: space-between;/*伸缩项目包含富裕空间*/
+
+        }
+        .box1{
+            background: deeppink;
+        }
+        .box2{
+            background: yellowgreen;
+        }
+        .box3{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

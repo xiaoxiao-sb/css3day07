@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            /*flex容器*/
+            display: flex;
+            display: -webkit-flex;
+
+            height: 200px;
+            border-bottom: 5px solid green;
+            /*主轴布局方向*/
+            /*默认值*/
+            /*flex-direction: row;*/
+            /*主轴侧轴发生对调*/
+            /*flex-direction: column;*/
+            /*主轴上start与end发生对调*/
+            /*flex-direction: row-reverse;*/
+            /*主轴与侧轴发生对调，主轴上start与end发生对调*/
+            flex-direction: column-reverse;
+        }
+        /*
+        如果flex-direction
+            后边有reverse，那么，主轴上start与end发生对调
+            后边有column，那么，主轴与侧轴发生对调
+        */
+        .box1{
+            background: deeppink;
+        }
+        .box2{
+            background: yellowgreen;
+        }
+        .box3{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>
